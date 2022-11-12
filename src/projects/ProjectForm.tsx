@@ -50,7 +50,6 @@ function ProjectForm({ onCancel, onSave, project: initialProject }: ProjectFormP
 
 	const handleChange = (event: any) => {
 		const { name, value, checked, type } = event.target;
-
 		let updatedValue = type === 'checkbox' ? checked : value;
 
 		if (type === 'number') updatedValue = Number(updatedValue);
