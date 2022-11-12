@@ -1,6 +1,13 @@
+// React
 import * as React from 'react';
-import { projectAPI } from './projectAPI';
+
+// Types/Interfaces
 import { Project } from './Project';
+
+// Server
+import { projectAPI } from './projectAPI';
+
+// Components
 import ProjectList from './ProjectList';
 
 function ProjectsPage() {

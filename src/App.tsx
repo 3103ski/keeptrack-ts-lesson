@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 // Pages
 import ProjectsPage from './projects/ProjectsPage';
 import HomePage from './HomePage';
+import ProjectPage from './projects/ProjectPage';
 
 import './App.css';
 
@@ -26,6 +27,7 @@ function App() {
 				<Routes>
 					<Route element={<HomePage />} path='/' />
 					<Route element={<ProjectsPage />} path='/projects' />
+					<Route element={<ProjectPage />} path='/projects/:id' />
 				</Routes>
 			</div>
 		</Router>
